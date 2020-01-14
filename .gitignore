@@ -1,0 +1,11 @@
+_jekyll/
+_mean/
+_vue/
+_docs/
+_media/
+node_modules/
+public/media/
+public/downloads
+.env
+server.bat
+notes.md
