@@ -1,6 +1,6 @@
 ## Sobre
 
-**MegaMoviesLibre** é um projeto forkeado da plataforma de streaming livre e colaborativa Libreflix a qual reúne produções audiovisuais independentes de livre exibição. 
+**MegaMoviesLibre** é um projeto forkeado da plataforma de streaming livre e colaborativa **Libreflix**[](https://libreflix.org/) a qual reúne produções audiovisuais independentes de livre exibição. 
 
 
 ![](https://s3-sa-east-1.amazonaws.com/cdn.br.catarse/uploads/redactor_rails/picture/data/244309/screely-1569280205294.png)
