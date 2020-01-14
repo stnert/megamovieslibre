@@ -1,0 +1,66 @@
+{% set title = "Criar Conta" %}
+{% extends 'layout.html' %}
+{% block opengraph %}
+<meta property="og:image" content="/sm-share2.jpg" />
+<meta property="og:type" content="blog" />
+<meta property="og:title" content="Criar Conta - Libreflix" />
+<meta property="og:description" content="Libreflix é uma plataforma de streaming aberta e colaborativa que reúne produções audiovisuais independentes, de livre exibição e que fazem pensar." />
+<meta property="og:url" content="https://libreflix.org" />
+<meta property="og:site_name" content="Libreflix" />
+
+<!-- twitter metatags-->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Criar Conta - Libreflix">
+<meta name="twitter:description" content="Libreflix é uma plataforma de streaming aberta e colaborativa que reúne produções audiovisuais independentes, de livre exibição e que fazem pensar.">
+<meta name="twitter:image" content="https://libreflix.org/sm-share2.jpg">
+{% endblock %}
+
+{% block body %}
+<div class="login-container container">
+  <div class="panel">
+    <div class="panel-body">
+      {% if messages.error %}
+      <div role="alert" class="alert alert-danger">
+        {% for error in messages.error %}
+        <div>{{ error.msg }}</div>
+        {% endfor %}
+      </div>
+      {% endif %}
+      <form method="POST">
+        <legend>Criar uma conta</legend>
+        <div class="form-group">
+          <label for="name">Nome</label>
+          <input type="text" name="name" id="name" placeholder="Nome" class="form-control" autofocus>
+        </div>
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" name="email" id="email" placeholder="E-mail" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="username" name="username" id="username" placeholder="Username" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="password">Senha</label>
+          <input type="password" name="password" id="password" placeholder="Senha" class="form-control">
+        </div>
+        <div class="form-group">
+          <!--<small class="text-muted">Criando uma conta, você concorda com os <a href="/">Termos de Uso</a>.</small>-->
+        </div>
+        <button type="submit" class="btn btn-success">Criar uma conta</button><hr>
+      </form>
+
+      <div class="text-center">
+        <div class="text-center">
+          <a href="/auth/facebook"><button type="submit" class="btn btn-fb">Criar conta com o Facebook</button></a>
+          <a href="/auth/twitter"><button type="submit" class="btn btn-tw">Criar conta com o Twitter</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="text-center">
+    Já possui uma conta? <br><br>
+    <a href="/login"><button type="submit" class="btn btn-danger">Entre agora</button></a>
+  </p>
+</div>
+{% endblock %}
