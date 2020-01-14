@@ -1,0 +1,56 @@
+{% set title = "Entrar" %}
+{% extends 'layout.html' %}
+{% block opengraph %}
+<meta property="og:image" content="/sm-share2.jpg" />
+<meta property="og:type" content="blog" />
+<meta property="og:title" content="Libreflix" />
+<meta property="og:description" content="Libreflix é uma plataforma de streaming aberta e colaborativa que reúne produções audiovisuais independentes, de livre exibição e que fazem pensar." />
+<meta property="og:url" content="https://libreflix.org" />
+<meta property="og:site_name" content="Libreflix" />
+
+<!-- twitter metatags-->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Libreflix">
+<meta name="twitter:description" content="Libreflix é uma plataforma de streaming aberta e colaborativa que reúne produções audiovisuais independentes, de livre exibição e que fazem pensar.">
+<meta name="twitter:image" content="https://libreflix.org/sm-share2.jpg">
+{% endblock %}
+{% block body %}
+<div class="login-container container">
+  <div class="panel">
+    <div class="panel-body">
+      {% if messages.error %}
+      <div role="alert" class="alert alert-danger">
+        {% for error in messages.error %}
+        <div>{{ error.msg }}</div>
+        {% endfor %}
+      </div>
+      {% endif %}
+      <form method="POST">
+        <legend>Entrar na sua conta</legend>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="Email" class="form-control" autofocus>
+        </div>
+        <div class="form-group">
+          <label for="password">Senha</label>
+          <input type="password" name="password" id="password" placeholder="Password" class="form-control">
+        </div>
+        <div class="form-group"><a href="/forgot"><strong>Esqueceu sua senha?</strong></a></div>
+        <button type="submit" class="btn btn-success">Entrar</button><hr>
+      </form>
+
+      <div class="text-center">
+        <div class="text-center">
+          <a href="/auth/facebook"><button type="submit" class="btn btn-fb">Entre com o Facebook</button></a>
+          <a href="/auth/twitter"><button type="submit" class="btn btn-tw">Entre com o Twitter</button></a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <p class="text-center">
+    Ainda não tem uma conta? <br><br>
+    <a href="/signup"><button type="submit" class="btn btn-danger">Criar Uma Nova Conta</button></a>
+  </p>
+</div>
+{% endblock %}
