@@ -86,7 +86,7 @@ app.listen(app.get('port'), function() {
 });
 
 module.exports = app;
-
+});
 
 {
     //The Movie Database API  
