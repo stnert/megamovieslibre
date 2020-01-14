@@ -5,6 +5,7 @@
 
 FROM debian:buster-20191118
 LABEL maintainer="me@guilmour.org"
+LABEL maintainer="fabio.trentino28@protonmail.com"
 
 # Apt install some tools
 RUN apt-get update && apt-get install -y \
