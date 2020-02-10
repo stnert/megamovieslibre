@@ -87,8 +87,3 @@ app.listen(app.get('port'), function() {
 
 module.exports = app;
 });
-
-{
-    //The Movie Database API  
-  "request_token": "6bc047b88f669d1fb86574f06381005d93d3517a"
- }
