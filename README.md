@@ -9,13 +9,6 @@
 
 Nós defendemos novas formas de compartilhamento da cultura. Formas que atinjam todas as pessoas, principalmente as que não podem pagar por ela. Formas que conectem os artistas direto com os fãs. E até formas que permitam que artistas criem algo novo à partir do trabalho de outros artistas. Cultura é ciência, é poesia e é de todo mundo.
 
-## Acessar
-- **Na web:** Você só precisa acessar o endereço https://libreflix.org
-- **GNU/Linux:** Em breve :)
-- **Android:** Baixe o nosso .apk disponível em https://libreflix.org/apps/#android
-- **F-Droid:** Procure o app dentro do F-droid: https://f-droid.org/en/packages/org.libreflix.app/
-- **Windows:** Baixe o programa instalável disponível em https://libreflix.org/apps/#windows
-
 ## Jeitos de ajudar
 - Contribua com o código-fonte do programa
 - Ajuda na nossa campanha de financiamento coletivo https://acredito.me/libreflix
