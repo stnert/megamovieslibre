@@ -3,7 +3,7 @@
 # Libreflix.org
 ############################################
 
-FROM debian:buster-20191118
+FROM debian:10
 LABEL maintainer="me@guilmour.org"
 LABEL maintainer="fabio.trentino28@protonmail.com"
 
