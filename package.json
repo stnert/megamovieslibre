@@ -20,7 +20,7 @@
     "express-validator": "5",
     "formidable": "1.0.17",
     "fs-extra": "5.0.0",
-    "marked": "0.3.18",
+    "marked": "4.0.10",
     "method-override": "2.3.10",
     "mongoose": "5.7.5",
     "morgan": "1.9.1",
