@@ -18,7 +18,7 @@
     "express-processimage": "7.9.0",
     "express-session": "1.17.3",
     "express-validator": "5",
-    "formidable": "1.0.17",
+    "formidable": "1.2.6",
     "fs-extra": "5.0.0",
     "marked": "0.3.18",
     "method-override": "2.3.10",
